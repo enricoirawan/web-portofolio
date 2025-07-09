@@ -3502,6 +3502,9 @@ form textarea:required:valid {
 .gallery__descr p {
   display: none;
 }
+.gallery__descr a {
+  display: none;
+}
 .gallery__descr .rounded-tag {
   display: -webkit-inline-box;
   display: -moz-inline-box;
