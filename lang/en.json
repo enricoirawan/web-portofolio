@@ -46,7 +46,7 @@
   "career_job_2_title": "Front-End Developer",
   "career_job_2_at": "PT. Mitra Kasih Perkasa",
   "career_job_2_period": "2022-current",
-  "career_job_2_desc": "Developed and maintained web and mobile applications while leading the front-end team using React.js, React Native, Flutter, Android (Java), and Electron.",
+  "career_job_2_desc": "Developed and maintained web and mobile applications while leading the front-end team using React.js, Next.js, React Native, Flutter, Android (Java), and Electron.",
   "career_job_3_title": "Mobile Developer Freelance",
   "career_job_3_at": "PT. Whiz Nuansa Innovation",
   "career_job_3_period": "2023",
@@ -65,5 +65,18 @@
   "send_message_text": "Send Message",
   "ending_text_1": "Want to know more about me, tell me about your project or just to say hello?",
   "ending_text_2": "Drop me a line, ",
-  "ending_text_3": "I'll get back as soon as possible."
+  "ending_text_3": "I'll get back as soon as possible.",
+  "goodsone_desc": "Built and deployed a mobile application for managing and monitoring party vendor services (Goodsone ID). Utilized Flutter with BLoC architecture, integrated Firebase for push notifications, app distribution, and crash analytics.",
+  "mint_desc": "Built and maintained the Mint Android application, enabling retail agents to perform transactions through a mobile POS system integrated with over 1,000 PPOB products, supporting both cash and digital payments. Tech Stack: Flutter, Provider, Firebase",
+  "mitra_mint_desc": "Developed and maintained the Mitra Mint mobile application on both Android and iOS platforms, enabling retail agents to conduct transactions via the Mitra Mint POS system, integrated with 1,000+ PPOB products and supporting both cash and cashless payments.",
+  "mkp_parkir": "Built and maintained a mobile POS application for parking systems on Sunmi, Tianyu, and Ingenico devices, fully integrated with payment gateways such as QRIS, debit cards, and prepaid systems. Tech Stack: React Native, Java, Native Modules, Redux, Material UI",
+  "mkp_eticketing": "Built and maintained a Mobile POS application for ticket sales on Sunmi, Tianyu, and Ingenico devices, integrated with QRIS, debit card, and prepaid payment gateways. Tech Stack: Android Native (Java), Retrofit, Dagger-Hilt, MVVM",
+  "mkp_eretribution": "Built and maintained a Mobile POS app deployed on Sunmi, Tianyu, and Ingenico devices for collecting rental payments from kiosk merchants in markets across Indonesia. The app was integrated with various payment methods, including QRIS, debit cards, and prepaid systems. Tech Stack: React Native, Java, Native Modules, Redux",
+  "mkp_ferry_agen": "Built and maintained a desktop POS application for ferry ticket sales agents across major ports in Batam, Tanjung Pinang, and Bali. Tech Stack: React.js, Redux, Electron, ShadCN, Sentry Monitoring",
+  "bca_ferry_agen": "Built and maintained a ticketing microsite for ferry services across Indonesia, integrated into the BCA Lifestyle and Mandiri Lifestyle (Livin Sukha) ecosystems to enable seamless ticket purchases. Tech Stack: React.js, Redux, Tailwind CSS, Material UI",
+  "livin_ferry_agen": "Built and maintained a ticketing microsite for ferry services across Indonesia, integrated into the Mandiri Lifestyle (Livin Sukha) ecosystems to enable seamless ticket purchases. Tech Stack: React.js, Redux, Tailwind CSS, Material UI",
+  "bca_wisata_indonesia": "Membangun dan merilis aplikasi Mobile pemesanan dan monitoring vendor pesta (Goodsone ID). Tech-Stack: Flutter, BLoC, Firebase (Push Notification, App Distribution, Crashanalytics)",
+  "bca_kai": "Built and maintained a microsite for PT KAI train ticket sales across Indonesia, seamlessly integrated into the Mandiri Livin Sukha lifestyle platform. Tech Stack: React.js, Redux, Tailwind CSS, Material UI",
+  "see_detail": "Lihat Detail..."
+
 }

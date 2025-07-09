@@ -46,7 +46,7 @@
   "career_job_2_title": "Front-End Developer",
   "career_job_2_at": "PT. Mitra Kasih Perkasa",
   "career_job_2_period": "2022-current",
-  "career_job_2_desc": "Mengembangkan dan memelihara aplikasi web dan mobile, sekaligus memimpin tim front-end dengan menggunakan React.js, React Native, Flutter, Java (Android), dan Electron.",
+  "career_job_2_desc": "Mengembangkan dan memelihara aplikasi web dan mobile, sekaligus memimpin tim front-end dengan menggunakan React.js, Next.js, React Native, Flutter, Java (Android), dan Electron.",
   "career_job_3_title": "Mobile Developer Freelance",
   "career_job_3_at": "PT. Whiz Nuansa Innovation",
   "career_job_3_period": "2023",
@@ -65,5 +65,17 @@
   "send_message_text": "Kirim Pesan",
   "ending_text_1": "Ingin tahu lebih banyak tentang saya, ingin cerita soal proyekmu, atau sekadar menyapa?",
   "ending_text_2": "Kirim saja pesan, ",
-  "ending_text_3": "saya akan segera membalasnya"
+  "ending_text_3": "saya akan segera membalasnya",
+  "goodsone_desc": "Membangun dan merilis aplikasi Mobile pemesanan dan monitoring vendor pesta (Goodsone ID).",
+  "mint_desc": "Membangun dan memelihara aplikasi Android Mint untuk agen-agen retail agar dapat bertransaksi menggunakan mobile POS Mint dengan terintegrasi 1000+ produk PPOB dengan pembayaran tunai dan non tunai.",
+  "mitra_mint_desc": "Membangun dan memelihara aplikasi Mobile Mitra Mint di platform Android & IOS untuk agen-agen retail agar dapat bertransaksi menggunakan POS Mitra Mint dengan terintegrasi 1000+ produk PPOB dengan pembayaran tunai dan non tunai.",
+  "mkp_parkir": "Membangun dan memilhara aplikasi Mobile POS (Sunmi, Tianyu, Ingenico) untuk Parking System yang terintegrasi dengan Payment Gateway (QRIS, DEBIT, PREPAID).",
+  "mkp_eticketing": "Membangun dan memelihara aplikasi Mobile POS (Sunmi, Tianyu, Ingenico) untuk penjualan Ticketing System yang terintegrasi dengan Payment Gateway (QRIS, DEBIT, PREPAID).",
+  "mkp_eretribution": "Membangun dan memelihara aplikasi Mobile POS (Sunmi, Tianyu, Ingenico) untuk penagihan merchant-merchant yang melakukan sewa kios di pasar-pasar di Indonesia yang terintegrasi dengan Payment Gateway (QRIS, DEBIT, PREPAID).",
+  "mkp_ferry_agen": "Membangun dan memelihara aplikasi POS agen penjualan tiket kapal di seluruh pelabuhan Batam, Tanjung Pinang dan Bali.",
+  "bca_ferry": "Membangun dan memelihara aplikasi Web (Microsite) untuk penjualan tiket kapal seluruh indonesia untuk masuk ke BCA LifeStyle.",
+  "livin_ferry": "Membangun dan memelihara aplikasi Web (Microsite) untuk penjualan tiket kapal seluruh indonesia untuk masuk ke Livin Sukha.",
+  "bca_wisata_indonesia": "Built and maintained a tourism ticketing microsite for destinations across Indonesia, integrated into Mandiri’s Livin Sukha platform to enhance user accessibility and convenience.",
+  "bca_kai": "Membangun dan memelihara aplikasi Web (Microsite) untuk penjualan tiket kereta api PT KAI untuk masuk ke Livin Sukha.",
+  "see_detail": "Lihat Detail..."
 }
