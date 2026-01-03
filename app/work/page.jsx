@@ -1,57 +1,183 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import React, { useState } from "react";
+import { motion } from 'framer-motion';
+import React, { useState } from 'react';
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 
-import { BsArrowUpRight, BsGithub } from "react-icons/bs";
+import { BsArrowUpRight, BsGithub } from 'react-icons/bs';
 
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@/components/ui/tooltip";
+} from '@/components/ui/tooltip';
 
-import Link from "next/link";
-import Image from "next/image";
-import WorkSliderBtns from "@/components/WorkSliderBtns";
+import Link from 'next/link';
+import Image from 'next/image';
+import WorkSliderBtns from '@/components/WorkSliderBtns';
 
 const projects = [
   {
-    num: "01",
-    category: "frontend",
-    title: "project 1",
+    num: '01',
+    title: 'Kereta Api Indonesia (Indonesian National Train)',
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam modi.",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
-    image: "/assets/work/thumb1.png",
-    live: "",
-    github: "",
+      'Developed and maintained scalable web microsites for Indonesia National Train ticket sales across Indonesia, enabling seamless integration with Bank Central Asia Indonesia Lifestyle for thousands of users.',
+    stack: [
+      { name: 'React JS' },
+      { name: 'Tailwind CSS' },
+      { name: 'Zustand' },
+      { name: 'React Query' },
+      { name: 'React Hook Form' },
+    ],
+    image: '/assets/work/kai-bca-detail.png',
+    live: 'https://www.bca.co.id/id/informasi/news-and-features/2025/05/27/02/14/mybca-makin-lengkap-bisa-beli-tiket-kai-pelni-dan-tempat-wisata',
+    github: '',
   },
   {
-    num: "02",
-    category: "fullstack",
-    title: "project 2",
+    num: '02',
+    title: 'MKP Lifestyle',
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam modi.",
-    stack: [{ name: "Next.js" }, { name: "Tailwind.css" }, { name: "Node.js" }],
-    image: "/assets/work/thumb2.png",
-    live: "",
-    github: "",
+      'Developed and maintained scalable web microsites for Tourist Destinations in Indonesia ticket sales across Indonesia, enabling seamless integration with Bank Central Asia Indonesia Lifestyle for thousands of users.',
+    stack: [
+      { name: 'React JS' },
+      { name: 'Tailwind CSS' },
+      { name: 'Zustand' },
+      { name: 'React Query' },
+      { name: 'React Hook Form' },
+    ],
+    image: '/assets/work/mkp-lifestyle.png',
+    live: 'https://www.bca.co.id/id/informasi/news-and-features/2025/05/27/02/14/mybca-makin-lengkap-bisa-beli-tiket-kai-pelni-dan-tempat-wisata',
+    github: '',
   },
   {
-    num: "03",
-    category: "frontend",
-    title: "project 3",
+    num: '03',
+    title: 'MKP Pelni (Indonesian National Ship)',
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam modi.",
-    stack: [{ name: "Next.js" }, { name: "Tailwind.css" }],
-    image: "/assets/work/thumb3.png",
-    live: "",
-    github: "",
+      'Developed and maintained scalable web microsites for nationwide ship ticket sales, serving high-profile clients including Bank Central Asia (BCA) Indonesia and Bank Mandiri (Livin - Sukha) Indonesia used by 5,000+ daily users and generating over IDR 100M monthly revenue',
+    stack: [
+      { name: 'React JS' },
+      { name: 'Tailwind CSS' },
+      { name: 'Zustand' },
+      { name: 'React Query' },
+      { name: 'React Hook Form' },
+    ],
+    image: '/assets/work/mkp-pelni.png',
+    live: 'https://www.bca.co.id/id/informasi/news-and-features/2025/05/27/02/14/mybca-makin-lengkap-bisa-beli-tiket-kai-pelni-dan-tempat-wisata',
+    github: '',
+  },
+  {
+    num: '04',
+    title: 'TiketKapal.com Website, Kios-K & Mobile',
+    description:
+      'Developed and released desktop POS, web, and mobile applications for port operations in collaboration with the Directorate of Sea Traffic (Direktorat Lalu Lintas Laut) and Transportation, Ministry of Transportation (Kementrian Perhubungan) in Indonesia.',
+    stack: [{ name: 'React JS' }, { name: 'Next JS' }, { name: 'Flutter' }],
+    image: '/assets/work/mkp-tiket-kapal.png',
+    live: 'tiketkapal.com',
+    github: '',
+  },
+  {
+    num: '05',
+    title: 'MKP Mitra Mint App',
+    description:
+      'Built and maintained the Mint Android application, enabling retail agents to perform transactions through a mobile POS system integrated with over 1,000 PPOB products, supporting both cash and digital payments. Tech Stack: Flutter, Provider, Firebase',
+    stack: [{ name: 'Flutter' }, { name: 'Provider' }, { name: 'Firebase' }],
+    image: '/assets/work/mkp-mint-community.png',
+    live: 'tiketkapal.com',
+    github: '',
+  },
+  {
+    num: '06',
+    title: 'MKP Parking Apps',
+    description:
+      'Built and maintained a mobile POS application for parking systems on Sunmi, Tianyu, and Ingenico devices, fully integrated with payment gateways such as QRIS, debit cards, and prepaid systems.',
+    stack: [
+      { name: 'React-Native' },
+      { name: 'Java Native Module' },
+      { name: 'Material UI' },
+    ],
+    image: '/assets/work/mkp-parkir-detail.png',
+    live: 'https://www.youtube.com/watch?v=s3ibMMxWgAk',
+    github: '',
+  },
+  {
+    num: '07',
+    title: 'MKP E-Retribution',
+    description:
+      'Built and maintained a Mobile POS app deployed on Sunmi, Tianyu, and Ingenico devices for collecting rental payments from kiosk merchants in markets across Indonesia. The app was integrated with various payment methods, including QRIS, debit cards, and prepaid systems.',
+    stack: [
+      { name: 'React-Native' },
+      { name: 'Java Native Module' },
+      { name: 'Material UI' },
+    ],
+    image: '/assets/work/mkp-eretribusi-detail.png',
+    live: 'https://www.youtube.com/watch?v=glOBN2EXNXI',
+    github: '',
+  },
+  {
+    num: '08',
+    title: 'project 3',
+    description:
+      'Built and maintained a Mobile POS application for ticket sales on Sunmi, Tianyu, and Ingenico devices, integrated with QRIS, debit card, and prepaid payment gateways. Tech Stack: Android Native (Java), Retrofit, Dagger-Hilt, MVVM',
+    stack: [
+      { name: 'Android' },
+      { name: 'Material UI' },
+      { name: 'Dagger-Hilt' },
+      { name: 'Retrofit' },
+      { name: 'MVVM' },
+    ],
+    image: '/assets/work/mkp-eticketing-detail.png',
+    live: 'https://www.youtube.com/watch?v=glOBN2EXNXI',
+    github: '',
+  },
+  {
+    num: '09',
+    title: 'project 3',
+    description:
+      'Simple app that can show list of anime, show anime details, anime search and favorite features.',
+    stack: [
+      { name: 'Swift' },
+      { name: 'Auto layout' },
+      { name: 'Full layout anchor ' },
+      { name: 'Realm Local DB' },
+      { name: 'Swinject' },
+    ],
+    image: '/assets/work/ios.png',
+    live: 'https://www.linkedin.com/posts/enrico-irawan_developer-programming-ios-activity-7013014364555264000-thd_?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4a1fEBmz8Ei2sII6gaF500rz2O8Enn4y4',
+    github: 'https://github.com/enricoirawan/Weabopedia-IOS-Modular',
+  },
+  {
+    num: '10',
+    title: 'Goodsone Vendor App',
+    description:
+      'Built and deployed a mobile application for managing and monitoring party vendor services (Goodsone ID). Utilized Flutter with BLoC architecture, integrated Firebase for push notifications, app distribution, and crash analytics.',
+    stack: [
+      { name: 'Flutter' },
+      { name: 'BLoC' },
+      { name: 'Firebase' },
+      { name: 'Push Notification' },
+    ],
+    image: '/assets/work/goodsone-detail.png',
+    live: '',
+    github: '',
+  },
+  {
+    num: '11',
+    title: 'KitaBisa Campaign App Clone',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam modi.',
+    stack: [
+      { name: 'Next js' },
+      { name: 'Nest JS' },
+      { name: 'Prisma ORM' },
+      { name: 'PostgreSQL' },
+    ],
+    image: '/assets/work/kita-bisa.png',
+    live: '',
+    github:
+      'https://github.com/enricoirawan/kitabisa-frontend?tab=readme-ov-file',
   },
 ];
 
@@ -70,7 +196,7 @@ const Work = () => {
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
-        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
+        transition: { delay: 2.4, duration: 0.4, ease: 'easeIn' },
       }}
       className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
     >
@@ -84,7 +210,7 @@ const Work = () => {
               </div>
               {/* project category */}
               <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
-                {project.category} project
+                {project.title} project
               </h2>
               {/* project description */}
               <p className="text-white/60">{project.description}</p>
@@ -92,10 +218,10 @@ const Work = () => {
               <ul className="flex gap-4">
                 {project.stack.map((item, index) => {
                   return (
-                    <li key={index} className="text-xl text-accent">
+                    <li key={index} className="text-sm text-accent">
                       {item.name}
                       {/* remove the last comma */}
-                      {index !== project.stack.length - 1 && ","}
+                      {index !== project.stack.length - 1 && ','}
                     </li>
                   );
                 })}
@@ -105,31 +231,35 @@ const Work = () => {
               {/* buttons */}
               <div className="flex items-center gap-4">
                 {/* live project button */}
-                <Link href={project.live}>
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Live project</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>
+                {project.live && (
+                  <Link href={project.live}>
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                          <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Live project</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
+                )}
                 {/* github project button */}
-                <Link href={project.github}>
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsGithub className="text-white text-3xl group-hover:text-accent" />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Github repository</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>
+                {project.github && (
+                  <Link href={project.github}>
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                          <BsGithub className="text-white text-3xl group-hover:text-accent" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Github repository</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
+                )}
               </div>
             </div>
           </div>
@@ -147,11 +277,11 @@ const Work = () => {
                       {/* overlay */}
                       <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                       {/* image */}
-                      <div className="relative w-full h-full">
+                      <div className="relative w-full h-full overflow-hidden group">
                         <Image
                           src={project.image}
                           fill
-                          className="object-cover"
+                          className="object-cover transform transition duration-900 group-hover:object-contain"
                           alt=""
                         />
                       </div>
