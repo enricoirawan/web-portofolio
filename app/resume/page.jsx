@@ -62,19 +62,19 @@ const experience = {
     'Experienced in creating reliable web, mobile, and backend applications with a strong focus on quality and performance.',
   items: [
     {
-      company: 'PT. SOLUSI TEKONOLOGI',
-      position: 'Mobile Flutter Developer',
-      duration: '2021 - 2022',
-    },
-    {
       company: 'PT. MITRA KASIH PERKASA',
-      position: 'Front-End Developer Intern',
+      position: 'Front-End Developer',
       duration: '2022 - present',
     },
     {
       company: 'PT. SHANKARA MITRA SENTOSA',
       position: 'Freelance Mobile Developer',
       duration: '2023',
+    },
+    {
+      company: 'PT. SOLUSI TEKONOLOGI',
+      position: 'Mobile Flutter Developer',
+      duration: '2021 - 2022',
     },
   ],
 };
