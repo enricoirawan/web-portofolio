@@ -90,7 +90,7 @@ const projects = [
   },
   {
     num: '06',
-    title: 'MKP Parking Apps',
+    title: 'MKP Parking App',
     description:
       'Built and maintained a mobile POS application for parking systems on Sunmi, Tianyu, and Ingenico devices, fully integrated with payment gateways such as QRIS, debit cards, and prepaid systems.',
     stack: [
@@ -104,7 +104,7 @@ const projects = [
   },
   {
     num: '07',
-    title: 'MKP E-Retribution',
+    title: 'MKP E-Retribution App',
     description:
       'Built and maintained a Mobile POS app deployed on Sunmi, Tianyu, and Ingenico devices for collecting rental payments from kiosk merchants in markets across Indonesia. The app was integrated with various payment methods, including QRIS, debit cards, and prepaid systems.',
     stack: [
@@ -118,7 +118,7 @@ const projects = [
   },
   {
     num: '08',
-    title: 'project 3',
+    title: 'MKP E-Ticketing App',
     description:
       'Built and maintained a Mobile POS application for ticket sales on Sunmi, Tianyu, and Ingenico devices, integrated with QRIS, debit card, and prepaid payment gateways. Tech Stack: Android Native (Java), Retrofit, Dagger-Hilt, MVVM',
     stack: [
@@ -134,7 +134,7 @@ const projects = [
   },
   {
     num: '09',
-    title: 'project 3',
+    title: 'Weabopedia',
     description:
       'Simple app that can show list of anime, show anime details, anime search and favorite features.',
     stack: [
