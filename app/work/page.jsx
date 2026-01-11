@@ -167,7 +167,7 @@ const projects = [
     num: '11',
     title: 'KitaBisa Campaign App Clone',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam modi.',
+      'The KitaBisa.com Backend Clone App is a crowdfunding application that allows users to create fundraising campaigns and collect donations from a wide range of contributors. This application provides a backend system to manage user authentication, campaign creation, and donation processing securely and efficiently.',
     stack: [
       { name: 'Next js' },
       { name: 'Nest JS' },
